@@ -1,8 +1,70 @@
 body {
+    font-family: 'Open Sans', sans-serif;
     background-color:rgb(32, 32, 32);
     color: white;
+    display: grid;
+    height: 100vh;
+    margin: 30px 100px 30px 100px;
+    line-height: 1.5;
 }
 
 .heroesDiv {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.eachHero > img{
+    max-width: 100px;
+    border: solid rgb(16, 24, 37) 3px;
+    border-radius: 50px;
+}
+
+.eachHero > img:hover{
+    border: solid rgb(27, 41, 63) 3px;
+    border-radius: 10px;
+}
+
+.eachHero {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-panel {
+    display: none;
+    width: 25%;
+    height: 200%;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.671);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    
+}
+
+.side-panel-open .side-panel {
+    display: initial;
+    
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+video {
+    width: 300px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+}
+
+h3 {
+    text-align: center;
 }
