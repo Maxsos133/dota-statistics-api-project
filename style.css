@@ -62,9 +62,12 @@ main {
 video {
     width: 300px;
     padding-bottom: 30px;
-    padding-left: 80px;
+    padding-left: 70px;
 }
 
 h3 {
     text-align: center;
+}
+input {
+    min-width: 35%;
 }
