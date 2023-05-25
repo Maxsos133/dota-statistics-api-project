@@ -40,7 +40,7 @@ body {
     right: 0;
     padding: 20px;
     flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: rgba(0, 0, 0, 0.849);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
     position: absolute;
     z-index: 9999;
@@ -70,4 +70,59 @@ h3 {
 }
 input {
     min-width: 35%;
+}
+
+a { display: flex;
+    background-color: rgb(177, 33, 33);
+    color:rgb(255, 255, 255);
+    max-width: 175px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a:active {
+    background: black;
+}
+
+input {
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px;
+    display: flex;
+    border-color: red;
+}
+
+#submitButton {
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(190, 190, 190);
+    border-color: red;
+    border-width:  2px;
+    color: black;
+    margin-top: 10px;
+
+}
+
+#submitButton:active {
+    background-color: black;
+    color: white;
+}
+
+.sidePanelX {
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(190, 190, 190);
+    border-color: red;
+    border-width:  2px;
+    color: black;
+    
+}
+
+p {
+    border-color: red;
+    border-width: 2px;
+    margin-top: 200px;
+    text-align: center;
 }

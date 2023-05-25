@@ -26,6 +26,8 @@ $button.on(`click`, async function() {
     let steam32Id = steam32IdElement.textContent.trim().replace(`[U:1:`, ``).replace(`]`, ``)
     console.log(steam32Id)
 
+  
+    $(`p`).css(`display`, `none`)
     
         
 
@@ -97,7 +99,7 @@ $button.on(`click`, async function() {
                 if (lastPlayed.data.length > 0) {
                   heroSidePanel += `<div>Last Match ID: ${lastPlayed.data[0].match_id}</div>`
                   if (replayAvailable) {
-                    heroSidePanel += `<a href="http://replay${cluster}.valve.net/570/${lastPlayed.data[0].match_id}_${salt}.dem.bz2">Download Replay</a>`;
+                    heroSidePanel += `<a href="http://replay${cluster}.valve.net/570/${lastPlayed.data[0].match_id}_${salt}.dem.bz2">Download Replay</a>`
                     heroSidePanel += `<a href="#" id="watchReplayBtn">Watch Replay</a>`
                   } else {
                     heroSidePanel += `<div>No replay available for the last played match.</div>`
