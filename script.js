@@ -1,4 +1,4 @@
-const steamApiKey = `9720CE9B302ADC1F7B65B4E28D8D9196`
+const steamApiKey = ''
 const apiKey = `c120c72b-dcac-41c1-b92b-dbaa1ac4ffc5`
 let $heroesDiv = $(`.heroesDiv`)
 let $sidePanel = $(`.side-panel`)
